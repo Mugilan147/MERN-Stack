@@ -1,0 +1,43 @@
+.head{
+    background-color: blue;
+}
+.whole{
+    background-color: lightblue;
+}
+.heading{
+    margin: 10px;
+}
+.venue{
+    margin: 5px;
+}
+.list{
+    font-size: large;
+    font-weight: 900 ;
+    margin-bottom: 2px;
+}
+.table{
+    text-align: center;
+}
+.india{
+    width: 18%;
+    display: inline-block;
+    width: 20%;
+}
+.india-1{
+    text-align: center;
+}
+.sa{
+    width: 18%;
+    display: inline-block;
+    width: 20%;
+}
+.sa-1{
+    text-align: center;
+}
+*{
+    font-family: cursive;
+}
+.image{
+    display: inline-block;
+    width: 20%;
+}
