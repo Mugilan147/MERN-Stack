@@ -1,0 +1,9 @@
+.bg{
+    background-image: url(https://ik.imagekit.io/g3noxl5cd/MERN%20Stack%20New/Tourism/sea-ocean);
+    background-size: cover;
+}
+.bg-1{
+    background-image: url(https://ik.imagekit.io/g3noxl5cd/MERN%20Stack%20New/Tourism/taj-mahal);
+    background-size: cover;
+    background-position: center;
+}
