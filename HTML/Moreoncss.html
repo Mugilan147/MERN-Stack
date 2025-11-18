@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Box Model-->
+    <div class="space-y-2">
+        <p class="font-[Poppins] font-medium text-[22px] leading-[28px] text-[#183b56] underline">Box Model</p>
+        <p class="font-[Poppins] font-normal text-[16px] leading-[24px] text-[#384053]">For the two boxes below we gave
+            the same height and width of 200 x 200 and padding p-4 but the first one looks bigger because we gave the
+            "box-content" so that the padding takes extra 16px from the outer space of the box makes it look like the
+            big one.
+        </p>
+        <p class="font-[Poppins] font-normal text-[16px] leading-[24px] text-[#384053]">But for the second box we gave
+            box-border so that the padding 16px is taken by padding from the inside space of the box</p>
+        <p class="font-[Poppins] font-normal text-[16px] leading-[24px] text-[#384053]">More on that we have som many
+            things in box model like padding,margin,border,etc,.</p>
+        <div class="bg-pink-500 h-[200px] w-[200px] flex flex-row items-center justify-center p-4 box-content">
+            Box 1
+        </div>
+        <div class="bg-purple-500 h-[200px] w-[200px] flex flex-row items-center justify-center">
+            Box 2
+        </div>
+    </div>
+
+    <!--Overflow-->
+    <div class="py-5 space-y-2">
+        <p class="font-[Poppins] font-medium text-[22px] leading-[28px] text-[#183b56] underline">Overflow</p>
+        <p class="font-[Poppins] font-normal text-[16px] leading-[24px] text-[#384053]">Overflow is the process of
+            enclosing the content within the given space on your div. Either we can give
+            overflow-auto,overflow-scroll,etc.</p>
+        <div
+            class="h-[200px] w-[200px] font-[Poppins] font-normal text-[16px] leading-[24px] text-[#384053] overflow-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas sunt
+            laborum accusamus at rerum. Consectetur adipisci ullam perspiciatis ut quo deserunt ratione rerum, ipsa
+            vitae perferendis debitis dolore itaque!</div>
+    </div>
+
+
+
+</body>
+
+</html>
