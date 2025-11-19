@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat and Bulb</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="2xl:container mx-auto flex flex-col gap-6 bg-black h-screen">
+        <div class="w-[80%] mx-auto flex flex-col justify-center items-center">
+            <img src="https://ik.imagekit.io/g3noxl5cd/MERN%20Stack%20New/Cat%20and%20Bulb/Cat%20and%20Bulb/bulb-on.webp"
+                alt="Bulb" class="h-40" id="bulb">
+            <img src="https://ik.imagekit.io/g3noxl5cd/MERN%20Stack%20New/Cat%20and%20Bulb/Cat%20and%20Bulb/cat-on.webp"
+                alt="Cat" class="h-52" id="cat">
+        </div>
+        <div class="w-fit mx-auto flex flex-col justify-center items-center p-5 border border-solid border-green-600 gap-4 rounded-xl bg-transparent">
+            <p id="para" class="font-serif font-bold text-[28px] leading-[34px] text-white">Switched On</p>
+            <div class="flex flex-row gap-5">
+                <button id="btnon" class="py-1 px-6 text-white rounded-lg border border-solid border-green-500">On</button>
+                <button id="btnoff" class="py-1 px-6 text-white rounded-lg border border-solid border-red-500">Off</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const blb = document.getElementById("bulb")
+        const catimg = document.getElementById("cat")
+        const switched = document.getElementById("para")
+        const on = document.getElementById("btnon")
+        const off = document.getElementById("btnoff")
+
+        on.addEventListener("click",() => {
+            catimg.src = "https://ik.imagekit.io/g3noxl5cd/MERN%20Stack%20New/Cat%20and%20Bulb/Cat%20and%20Bulb/cat-on.webp"
+            blb.src ="https://ik.imagekit.io/g3noxl5cd/MERN%20Stack%20New/Cat%20and%20Bulb/Cat%20and%20Bulb/bulb-on.webp"
+            switched.textContent = "Switched On"
+            on.style.backgroundColor = "green"
+            off.style.backgroundColor = "gray"
+        })
+        off.addEventListener("click",() => {
+            catimg.src = "https://ik.imagekit.io/g3noxl5cd/MERN%20Stack%20New/Cat%20and%20Bulb/Cat%20and%20Bulb/cat-eyes.webp"
+            blb.src ="https://ik.imagekit.io/g3noxl5cd/MERN%20Stack%20New/Cat%20and%20Bulb/Cat%20and%20Bulb/bulb-off.webp"
+            switched.textContent = "Switched Off"
+            off.style.backgroundColor = "red"
+            on.style.backgroundColor = "gray"
+        })
+
+    </script>
+</body>
+
+</html>
