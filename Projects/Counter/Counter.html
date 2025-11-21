@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="2xl:container mx-auto flex flex-col justify-center h-screen bg-black">
+        <div
+            class="w-fit mx-auto flex flex-col items-center justify-center p-4 border border-solid border-violet-400 rounded-xl">
+            <h1 class="font-[Poppins] font-bold text-[28px] leading-[34px] text-white">Counter</h1>
+            <p class="font-[Poppins] font-bold text-[28px] leading-[34px] text-white" id="num">0</p>
+            <div class="flex flex-row justify-between gap-4">
+                <button class="py-1 px-6 text-white rounded-lg border border-solid border-red-500" id="minus">-</button>
+                <button class="py-1 px-6 text-white rounded-lg border border-solid border-blue-500"
+                    id="reset">Reset</button>
+                <button class="py-1 px-6 text-white rounded-lg border border-solid border-green-500"
+                    id="plus">+</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const num = document.getElementById("num");
+        const minus = document.getElementById("minus");
+        const reset = document.getElementById("reset");
+        const plus = document.getElementById("plus");
+
+        minus.addEventListener("click", () => {
+            num.textContent = parseInt(num.textContent) - 1;
+            minus.style.backgroundColor = "red";
+            reset.style.backgroundColor = "gray";
+            plus.style.backgroundColor = "gray";
+            if (parseInt(num.textContent) <= 0) {
+                num.style.color = "red"
+            } else {
+                num.style.color = "green"
+            }
+        })
+        reset.addEventListener("click", () => {
+            num.textContent = 0
+            num.style.color = "gray"
+            minus.style.backgroundColor = "gray";
+            reset.style.backgroundColor = "blue";
+            plus.style.backgroundColor = "gray";
+        })
+
+        plus.addEventListener("click", () => {
+            num.textContent = parseInt(num.textContent) + 1;
+            minus.style.backgroundColor = "gray";
+            reset.style.backgroundColor = "gray";
+            plus.style.backgroundColor = "green";
+            if (parseInt(num.textContent) >= 0) {
+                num.style.color = "green"
+            } else {
+                num.style.color = "red"
+            }
+        })
+    </script>
+</body>
+
+</html>
