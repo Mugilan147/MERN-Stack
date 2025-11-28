@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Day 1</title>
+</head>
+
+<body>
+    <!--Let's use setter method and create a virtual DOM Element-->
+    <!--React via CDN-->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <div id="root">
+        <p>Hello World</p>
+    </div>
+
+    <script>
+        const para = React.createElement("p",null,"Hello React") //This line is equivalent to ==> (<p>"Hello React"</p>)
+        const root = ReactDOM.createRoot(document.getElementById("root"));// In this line we are creating a root for the element
+        root.render(para)//Here we are rendering our element in web
+
+    </script>
+</body>
+
+</html>
